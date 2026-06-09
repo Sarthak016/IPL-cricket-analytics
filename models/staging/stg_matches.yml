@@ -1,0 +1,36 @@
+version: 2
+
+models:
+  - name: stg_matches
+    columns:
+      - name: id
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_deliveries
+    columns:
+      - name: match_id
+        tests:
+          - not_null
+
+  - name: dim_batsmen
+    columns:
+      - name: batsman
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_bowlers
+    columns:
+      - name: bowler
+        tests:
+          - unique
+          - not_null
+
+  - name: fact_matches
+    columns:
+      - name: match_id
+        tests:
+          - unique
+          - not_null
