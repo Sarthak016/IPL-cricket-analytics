@@ -13,6 +13,7 @@ stg_players, stg_teams)
 ↓
 
 ┌───────────────┼───────────────┐
+
 dim_batsmen    dim_bowlers      fact_matches
 
 ## Tech Stack
