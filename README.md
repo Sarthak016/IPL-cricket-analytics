@@ -14,7 +14,7 @@ stg_players, stg_teams)
 
 ┌───────────────┼───────────────┐
 
-dim_batsmen    dim_bowlers      fact_matches
+dim_batsmen      dim_bowlers        fact_matches
 
 ## Tech Stack
 - **Snowflake** — Cloud data warehouse
