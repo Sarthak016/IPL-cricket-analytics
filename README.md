@@ -66,6 +66,7 @@ dim_batsmen    dim_bowlers      fact_matches
 ![Python Output](python_output.png)
 
 ## Project Structure
+```
 models/
 ├── staging/
 │   ├── sources.yml
@@ -74,8 +75,9 @@ models/
 │   ├── stg_players.sql
 │   └── stg_teams.sql
 └── marts/
-├── dim_batsmen.sql
-├── dim_bowlers.sql
-└── fact_matches.sql
+    ├── dim_batsmen.sql
+    ├── dim_bowlers.sql
+    └── fact_matches.sql
 snowflake_connector.py
 requirements.txt
+```
