@@ -4,17 +4,16 @@
 An end-to-end cricket analytics pipeline built on Snowflake and dbt Core, analyzing 179,000+ ball-by-ball IPL deliveries to uncover player performance insights, team statistics, and match trends.
 
 ## Architecture
+```
 Raw CSVs → Snowflake Stage → COPY INTO → Raw Layer
-↓
-
-dbt Staging Layer
-(stg_matches, stg_deliveries,
-stg_players, stg_teams)
-↓
-
-┌───────────────┼───────────────┐
-
-dim_batsmen      dim_bowlers        fact_matches
+                                              ↓
+                                    dbt Staging Layer
+                              (stg_matches, stg_deliveries,
+                               stg_players, stg_teams)
+                                              ↓
+                         ┌────────────────────┼────────────────────┐
+                    dim_batsmen          dim_bowlers          fact_matches
+```
 
 ## Tech Stack
 - **Snowflake** — Cloud data warehouse
