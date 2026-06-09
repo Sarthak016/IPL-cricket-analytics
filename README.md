@@ -6,10 +6,12 @@ An end-to-end cricket analytics pipeline built on Snowflake and dbt Core, analyz
 ## Architecture
 Raw CSVs → Snowflake Stage → COPY INTO → Raw Layer
 ↓
+
 dbt Staging Layer
 (stg_matches, stg_deliveries,
 stg_players, stg_teams)
 ↓
+
 ┌───────────────┼───────────────┐
 dim_batsmen    dim_bowlers      fact_matches
 
